@@ -164,7 +164,7 @@
 <script>
 function myFunction() {
     document.getElementById("random_settings_rgb").innerHTML = "(" + Math.random()* 255 + ", " + Math.random()* 255 + ", " + Math.random()* 255 + ")";
-    document.getElementById("random_settings_brightness").innerHTML = "Brightness: " + Math.random() * 100 + "%"
+    document.getElementById("random_settings_brightness").innerHTML = "Brightness: " + Math.random() * document.getElementById("range").value; + "%"
 }
 function myFunction2(){
     
